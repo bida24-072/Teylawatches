@@ -1,4 +1,4 @@
-var IM={"396": "images/396.jpg", "426": "images/426.jpg", "427": "images/427.jpg", "428": "images/428.jpg", "458": "images/458.jpg", "459": "images/459.jpg", "460": "images/460.jpg", "461": "images/461.jpg", "462": "images/462.jpg", "463": "images/463.jpg", "464": "images/464.jpg"};
+var IM={"396": "396.jpg", "426": "426.jpg", "427": "427.jpg", "428": "428.jpg", "458": "458.jpg", "459": "459.jpg", "460": "460.jpg", "461": "461.jpg", "462": "462.jpg", "463": "463.jpg", "464": "464.jpg"};
 var $=function(s,e){return(e||document).querySelector(s)},$$=function(s,e){return[].slice.call((e||document).querySelectorAll(s))};
 var cl=function(v){return Math.max(0,Math.min(1,v))},ss=function(a,b,x){x=cl((x-a)/(b-a));return x*x*(3-2*x)};
 $("#ex").src=IM[428];$$("[data-im]").forEach(function(e){e.src=IM[e.dataset.im]});$$("[data-bg]").forEach(function(e){e.style.backgroundImage="url("+IM[e.dataset.bg]+")"});
